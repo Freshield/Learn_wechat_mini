@@ -7,6 +7,16 @@ Page({
   data: {
 
   },
+  submitting: function(e) {
+    wx.request({
+      method: 'post',
+      url: 'http://127.0.0.1:9999/',
+      data: e.detail.value,
+      success: function(res) {
+        console.log(res)
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

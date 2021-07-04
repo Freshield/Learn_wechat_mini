@@ -1,6 +1,6 @@
 <!--pages/index/index.wxml-->
 <view class="container">
-  <form bindsubmit="submit">
+  <form bindsubmit="submitting">
     <view>
       <text>姓名：</text>
       <input name="name" value="张三" />
