@@ -29,9 +29,15 @@ Page({
    * 页面的初始数据
    */
   data: {
+    num1: 0,
+    num2: 0,
     result: ''
   },
-
+  change3: function(e) {
+    var data = {}
+    data[e.target.dataset.id] = Number(e.detail.value)
+    this.setData(data)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

@@ -1,15 +1,16 @@
 <!--pages/index/index.wxml-->
 <view>
   <text>请输入第1个数字：</text>
-  <input type="number" bindchange="change2" id="num1" data-id="num1"/>
+  <input type="number" bindchange="change3" id="num1" data-id="num1"/>
 </view>
 <view>
   <text>请输入第2个数字：</text>
-  <input type="number" bindchange="change2" id="num2" data-id="num2"/>
+  <input type="number" bindchange="change3" id="num2" data-id="num2"/>
 </view>
 <button bindtap="compare">比较</button>
 <view>
-  <text>比较结果：{{result}}</text>
+  <text>比较结果：{{num1 > num2 ? '第1个数大' :
+  (num1 < num2 ? '第2个数大' : '两数相等')}}</text>
 </view>
 <view bindtap="outerTap">
   outer
