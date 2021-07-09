@@ -22,6 +22,9 @@ Page({
   change: function(e) {
     this[e.currentTarget.id] = Number(e.detail.value)
   },
+  change2: function(e) {
+    this[e.target.dataset.id] = Number(e.detail.value)
+  },
   /**
    * 页面的初始数据
    */

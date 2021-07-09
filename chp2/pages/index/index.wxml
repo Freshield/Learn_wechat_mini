@@ -1,11 +1,11 @@
 <!--pages/index/index.wxml-->
 <view>
   <text>请输入第1个数字：</text>
-  <input type="number" bindchange="change" id="num1"/>
+  <input type="number" bindchange="change2" id="num1" data-id="num1"/>
 </view>
 <view>
   <text>请输入第2个数字：</text>
-  <input type="number" bindchange="change" id="num2"/>
+  <input type="number" bindchange="change2" id="num2" data-id="num2"/>
 </view>
 <button bindtap="compare">比较</button>
 <view>
