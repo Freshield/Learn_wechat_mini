@@ -19,6 +19,9 @@ Page({
     }
     this.setData({result: str})
   },
+  change: function(e) {
+    this[e.currentTarget.id] = Number(e.detail.value)
+  },
   /**
    * 页面的初始数据
    */
