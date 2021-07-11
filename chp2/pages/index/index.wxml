@@ -7,7 +7,14 @@
   <text>请输入第2个数字：</text>
   <input type="number" />
 </view>
-<button>比较</button>
+<button bindtap="compare">比较</button>
 <view>
   <text>比较结果：</text>
+</view>
+<view bindtap="outerTap">
+  outer
+  <view catchtap="middleTap">
+    middle
+    <view bindtap="innerTap">inner</view>
+  </view>
 </view>
