@@ -1,0 +1,9 @@
+<!--test.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <text>hello world</text>
+  </view>
+  <view class="back">
+    <text bindtap="bindTapBack">back</text>
+  </view>
+</view>
