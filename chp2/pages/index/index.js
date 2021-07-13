@@ -1,11 +1,29 @@
 // pages/index/index.js
 Page({
-
+  num1: 0,
+  num2: 0,
+  num1change: function(e) {
+    this.num1 = Number(e.detail.value)
+    console.log('第1个数字为：' + this.num1)
+  },
+  num2change: function(e) {
+    this.num2 = Number(e.detail.value)
+    console.log('第2个数字为：' + this.num2)
+  },
+  compare: function() {
+    var str = '两数相等'
+    if (this.num1 > this.num2) {
+      str = '第1个数大'
+    } else if (this.num1 < this.num2) {
+      str = '第2个数大'
+    }
+    this.setData({result: str})
+  },
   /**
    * 页面的初始数据
    */
   data: {
-
+    result: ''
   },
 
   /**
@@ -73,11 +91,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  compare: function(e) {
-    console.log('button tap')
-    console.log(e)
   },
 
   innerTap: function(e) {

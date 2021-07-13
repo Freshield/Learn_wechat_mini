@@ -8,5 +8,6 @@
     "navigationBarBackgroundColor": "#369",
     "enablePullDownRefresh": true
   },
-  "debug": false
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
 }
