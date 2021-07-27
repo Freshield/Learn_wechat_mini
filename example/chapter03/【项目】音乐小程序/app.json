@@ -4,5 +4,6 @@
     "pages/test/index",
     "pages/test/swiper",
     "pages/test/test"
-  ]
+  ],
+  "sitemapLocation": "sitemap.json"
 }

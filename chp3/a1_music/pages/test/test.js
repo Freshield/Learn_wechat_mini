@@ -1,23 +1,15 @@
-// pages/index/index.js
+// pages/test/test.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    item: 0
-  },
-  changeItem: function(e) {
-    this.setData({
-      item: e.target.dataset.item
-    })
-  },
-  changeTab: function(e) {
-    this.setData({
-      item: e.detail.current
-    })
-  },
 
+  },
+  scroll: function(e) {
+    console.log(e.detail)
+  },
   /**
    * 生命周期函数--监听页面加载
    */
