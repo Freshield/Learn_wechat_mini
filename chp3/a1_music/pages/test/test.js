@@ -30,7 +30,7 @@ Page({
       console.log(res.errMsg)
       console.log(res.errCode)
     })
-    //audioCtx.play()
+    // audioCtx.play()
   },
 
   sliderChanging: e => {
