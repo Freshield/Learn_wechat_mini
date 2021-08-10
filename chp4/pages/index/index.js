@@ -1,4 +1,5 @@
 // pages/index/index.js
+var music_src = 'http://m10.music.126.net/20210727201925/dbad7ed7355ecb235df7d30cf3ed2abd/ymusic/6ce6/b2c1/9fac/ed75227c13e71a49cb885007385d08c2.mp3'
 Page({
 
   /**
@@ -18,8 +19,29 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
+  bgm: null,
+  music_url: music_src,
+  music_coverImgUrl: '/images/invite.png',
   onReady: function () {
-
+    this.bgm = wx.getBackgroundAudioManager()
+    this.bgm.title = 'marry me'
+    this.bgm.epname = 'wedding'
+    this.bgm.singer = 'singer'
+    this.bgm.coverImgUrl = this.music_coverImgUrl
+    this.bgm.onCanplay(() => {
+      this.bgm.pause()
+    })
+    this.bgm.src = this.music_url
+  },
+  play: function(e) {
+    if (this.data.isPlayingMusic) {
+      this.bgm.pause()
+    } else {
+      this.bgm.play()
+    }
+    this.setData({
+      isPlayingMusic: !this.data.isPlayingMusic
+    })
   },
 
   /**

@@ -3,3 +3,25 @@
   <image src="/images/music_icon.png" />
   <image src="/images/music_play.png" />
 </view>
+<!-- 背景图片 -->
+<image class="bg" src="/images/bg_1.png" />
+<!-- 内容区域 -->
+<view class="content">
+  <!-- 顶部gif图 -->
+  <image class="content-gif" src="/images/save_the_date.gif" />
+  <!-- 标题 -->
+  <view class="content-title">邀请函</view>
+  <!-- 新郎和新娘的合照-->
+  <view class="content-avatar">
+    <image src="/images/avatar.png" />
+  </view>
+  <!-- 新郎和新娘的名字 -->
+  <view class="content-info"></view>
+  <!-- 婚礼信息 -->
+  <view class="content-address">
+    <view>我们诚邀您来参加我们的婚礼</view>
+    <view>时间：2019年1月28日</view>
+    <view>地点：北京市海淀区xx路xx酒店</view>
+  </view>
+
+</view>
