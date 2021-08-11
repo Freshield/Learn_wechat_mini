@@ -14,6 +14,7 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": ["audio"],
   "tabBar": {
     "color": "#ccc",
     "selectedColor": "#ff4c91",

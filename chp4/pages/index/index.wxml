@@ -1,2 +1,5 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="player player-{{isPlayingMusic ? 'play' : 'pause'}}" bindtap="play">
+  <image src="/images/music_icon.png" />
+  <image src="/images/music_play.png" />
+</view>
